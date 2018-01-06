@@ -1,0 +1,31 @@
+{
+  "name":"demorepo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [
+    "npm配置演示文件"
+  ],
+  "repository": "git@github.com:zhengwei1949/demo666.git",
+  "author": "zhengwei1949",
+  "scripts": {
+    "clean": "rimraf dist/*",
+    "serve": "nodemon ./serve/index",
+    "preserve": "opener http://localhost:3000",
+    "hot": "browser-sync start --server --files \"./*.html,./*/*.*\"",
+    "lint": "eslint ./",
+    "release:major": "npm version major && npm publish && git push --follow-tags",
+    "release:minor": "npm version minor && npm publish && git push --follow-tags",
+    "release:patch": "npm version patch && npm publish && git push --follow-tags"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "browser-sync": "^2.23.3",
+    "eslint": "^4.14.0",
+    "express": "^4.16.2",
+    "http-server": "^0.10.0",
+    "live-reload": "^1.1.0",
+    "nodemon": "^1.14.7",
+    "open": "^0.0.5",
+    "rimraf": "^2.6.2"
+  }
+}
