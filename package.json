@@ -1,6 +1,6 @@
 {
-  "name":"demorepo",
-  "version": "1.0.0",
+  "name": "demorepo",
+  "version": "2.0.0",
   "main": "index.js",
   "keywords": [
     "npm配置演示文件"
